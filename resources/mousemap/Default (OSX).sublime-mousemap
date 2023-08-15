@@ -1,0 +1,81 @@
+[
+  // The mouse bindings in here are samples that you can take and use in your
+  // own settings; they're grouped according to the manner in which the settings
+  // are adjusted, either making the font size decrease, increase, or reset back
+  // to the appropriate default.
+  //
+  // The reset commands all default to a double click while pressing the same
+  // key modifiers as the increase/decrease commands.
+
+
+  //--------------------------------------------------------------------------//
+
+
+  //------- Global Font Size (Updates Preferences.sublime-settings -------//
+  // {
+  //   "button": "scroll_down", "modifiers": ["ctrl"],
+  //   "command": "global_font_size", "args": {"action": "decrease"}
+  // },
+  // {
+  //   "button": "scroll_up", "modifiers": ["ctrl"],
+  //   "command": "global_font_size", "args": {"action": "increase"}
+  // },
+  // {
+  //   "button": "button3", "modifiers": ["ctrl"], "count": 2,
+  //   "command": "global_font_size", "args": {"action": "reset"}
+  // },
+
+
+  //--------------------------------------------------------------------------//
+
+
+  //------- Window Font Size (Updates Window Project Data -------//
+  // {
+  //   "button": "scroll_down", "modifiers": ["ctrl", "alt"],
+  //   "command": "window_font_size", "args": {"action": "decrease"}
+  // },
+  // {
+  //   "button": "scroll_up", "modifiers": ["ctrl", "alt"],
+  //   "command": "window_font_size", "args": {"action": "increase"}
+  // },
+  // {
+  //   "button": "button3", "modifiers": ["ctrl", "alt"], "count": 2,
+  //   "command": "window_font_size", "args": {"action": "reset"}
+  // },
+
+
+  //--------------------------------------------------------------------------//
+
+
+  //------- Syntax Font Size (Updates Syntax sublime-settings -------//
+  // {
+  //   "button": "scroll_down", "modifiers": ["ctrl", "shift"],
+  //   "command": "syntax_font_size", "args": {"action": "decrease"}
+  // },
+  // {
+  //   "button": "scroll_up", "modifiers": ["ctrl", "shift"],
+  //   "command": "syntax_font_size", "args": {"action": "increase"}
+  // },
+  // {
+  //   "button": "button3", "modifiers": ["ctrl", "shift"], "count": 2,
+  //   "command": "syntax_font_size", "args": {"action": "reset"}
+  // },
+
+
+  //--------------------------------------------------------------------------//
+
+
+  //------- View Font Size (Updates the current view only) -------//
+  // {
+  //   "button": "scroll_down", "modifiers": ["ctrl", "alt", "shift"],
+  //   "command": "view_font_size", "args": {"action": "decrease"}
+  // },
+  // {
+  //   "button": "scroll_up", "modifiers": ["ctrl", "alt", "shift"],
+  //   "command": "view_font_size", "args": {"action": "increase"}
+  // },
+  // {
+  //   "button": "button3", "modifiers": ["ctrl", "alt", "shift"], "count": 2,
+  //   "command": "view_font_size", "args": {"action": "reset"}
+  // },
+]

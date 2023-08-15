@@ -1,0 +1,77 @@
+[
+  { "id": "preferences",
+    "children": [
+      {
+        "caption": "FontResizer",
+        "children":
+        [
+          { "caption": "Global",
+            "children": [
+              { "command": "global_font_size", "args": {"action": "increase"}, "caption": "Larger" },
+              { "command": "global_font_size", "args": {"action": "decrease"}, "caption": "Smaller" },
+              { "caption": "-" },
+              { "command": "global_font_size", "args": {"action": "reset"}, "caption": "Reset" }
+            ]
+          },
+          { "caption": "Window",
+            "children": [
+              { "command": "window_font_size", "args": {"action": "increase"}, "caption": "Larger" },
+              { "command": "window_font_size", "args": {"action": "decrease"}, "caption": "Smaller" },
+              { "caption": "-" },
+              { "command": "window_font_size", "args": {"action": "reset"}, "caption": "Reset" }
+            ]
+          },
+          { "caption": "Syntax",
+            "children": [
+              { "command": "syntax_font_size", "args": {"action": "increase"}, "caption": "Larger" },
+              { "command": "syntax_font_size", "args": {"action": "decrease"}, "caption": "Smaller" },
+              { "caption": "-" },
+              { "command": "syntax_font_size", "args": {"action": "reset"}, "caption": "Reset" }
+            ]
+          },
+          { "caption": "View",
+            "children": [
+              { "command": "view_font_size", "args": {"action": "increase"}, "caption": "Larger" },
+              { "command": "view_font_size", "args": {"action": "decrease"}, "caption": "Smaller" },
+              { "caption": "-" },
+              { "command": "view_font_size", "args": {"action": "reset"}, "caption": "Reset" }
+            ]
+          },
+        ]
+      },
+      {
+        "caption": "Package Settings",
+        "mnemonic": "P",
+        "id": "package-settings",
+        "children": [
+          {
+            "caption": "FontResizer",
+            "children": [
+              { "caption": "README",
+                "command": "open_file",
+                "args": {
+                  "file": "${packages}/FontResizer/README.md"
+                }
+              },
+              { "caption": "-" },
+              { "caption": "Key Bindings",
+                "command": "edit_settings",
+                "args": {
+                  "base_file": "${packages}/FontResizer/resources/keymap/Default (${platform}).sublime-keymap",
+                  "default": "[\n\t$0\n]\n"
+                }
+              },
+              { "caption": "Mouse Bindings",
+                "command": "edit_settings",
+                "args": {
+                  "base_file": "${packages}/FontResizer/resources/mousemap/Default (${platform}).sublime-mousemap",
+                  "default": "[\n\t$0\n]\n"
+                }
+              },
+            ]
+          }
+        ]
+      },
+    ]
+  }
+]

@@ -1,0 +1,60 @@
+[
+  // The key bindings in here are samples that you can take and use in your
+  // own settings; they're grouped according to the manner in which the settings
+  // are adjusted, either making the font size decrease, increase, or reset back
+  // to the appropriate default.
+
+
+  //--------------------------------------------------------------------------//
+
+
+  //------- Global Font Size (Updates Preferences.sublime-settings -------//
+  // { "keys": ["super++"], "command": "global_font_size", "args": {"action": "increase"} },
+  // { "keys": ["super+keypad_plus"], "command": "global_font_size", "args": {"action": "increase"} },
+  // { "keys": ["super+="], "command": "global_font_size", "args": {"action": "increase"} },
+  // { "keys": ["super+-"], "command": "global_font_size", "args": {"action": "decrease"} },
+  // { "keys": ["super+keypad_minus"], "command": "global_font_size", "args": {"action": "decrease"} },
+
+  // Note; this is the default key binding for focusing the side bar, so you may
+  //        want to customize it or disable it.
+  // { "keys": ["super+0"], "command": "global_font_size", "args": {"action": "reset"} },
+
+
+  //--------------------------------------------------------------------------//
+
+
+  //------- Window Font Size (Updates Window Project Data -------//
+  // { "keys": ["super+alt++"], "command": "window_font_size", "args": {"action": "increase"} },
+  // { "keys": ["super+alt+keypad_plus"], "command": "window_font_size", "args": {"action": "increase"} },
+  // { "keys": ["super+alt+="], "command": "window_font_size", "args": {"action": "increase"} },
+  // { "keys": ["super+alt+-"], "command": "window_font_size", "args": {"action": "decrease"} },
+  // { "keys": ["super+alt+keypad_minus"], "command": "window_font_size", "args": {"action": "decrease"} },
+  // { "keys": ["super+alt+0"], "command": "window_font_size", "args": {"action": "reset"} },
+
+
+  //--------------------------------------------------------------------------//
+
+
+  //------- Syntax Font Size (Updates Syntax sublime-settings -------//
+  // { "keys": ["super+shift++"], "command": "syntax_font_size", "args": {"action": "increase"} },
+  // { "keys": ["super+shift+keypad_plus"], "command": "syntax_font_size", "args": {"action": "increase"} },
+  // { "keys": ["super+shift+="], "command": "syntax_font_size", "args": {"action": "increase"} },
+  // { "keys": ["super+shift+-"], "command": "syntax_font_size", "args": {"action": "decrease"} },
+  // { "keys": ["super+shift+keypad_minus"], "command": "syntax_font_size", "args": {"action": "decrease"} },
+  // Note: On Windows, this key may be used by the OS to toggle languages; this
+  //       includes running Sublime in a wslg window; so you may need to change
+  //       it or modify your windows key settings to not assign this key.
+  //       See: https://groups.google.com/g/leo-editor/c/XqAQ48gE40Y?pli=1
+  // { "keys": ["super+shift+0"], "command": "syntax_font_size", "args": {"action": "reset"} },
+
+  //--------------------------------------------------------------------------//
+
+
+  //------- View Font Size (Updates the current view only) -------//
+  // { "keys": ["super+alt+shift++"], "command": "view_font_size", "args": {"action": "increase"} },
+  // { "keys": ["super+alt+shift+keypad_plus"], "command": "view_font_size", "args": {"action": "increase"} },
+  // { "keys": ["super+alt+shift+="], "command": "view_font_size", "args": {"action": "increase"} },
+  // { "keys": ["super+alt+shift+-"], "command": "view_font_size", "args": {"action": "decrease"} },
+  // { "keys": ["super+alt+shift+keypad_minus"], "command": "view_font_size", "args": {"action": "decrease"} },
+  // { "keys": ["super+alt+shift+0"], "command": "view_font_size", "args": {"action": "reset"} },
+]
