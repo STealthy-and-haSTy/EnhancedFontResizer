@@ -2,7 +2,7 @@
   { "id": "preferences",
     "children": [
       {
-        "caption": "FontResizer",
+        "caption": "EnhancedFontResizer",
         "children":
         [
           { "caption": "Global",
@@ -45,26 +45,26 @@
         "id": "package-settings",
         "children": [
           {
-            "caption": "FontResizer",
+            "caption": "EnhancedFontResizer",
             "children": [
               { "caption": "README",
                 "command": "open_file",
                 "args": {
-                  "file": "${packages}/FontResizer/README.md"
+                  "file": "${packages}/EnhancedFontResizer/README.md"
                 }
               },
               { "caption": "-" },
               { "caption": "Key Bindings",
                 "command": "edit_settings",
                 "args": {
-                  "base_file": "${packages}/FontResizer/resources/keymap/Default (${platform}).sublime-keymap",
+                  "base_file": "${packages}/EnhancedFontResizer/resources/keymap/Default (${platform}).sublime-keymap",
                   "default": "[\n\t$0\n]\n"
                 }
               },
               { "caption": "Mouse Bindings",
                 "command": "edit_settings",
                 "args": {
-                  "base_file": "${packages}/FontResizer/resources/mousemap/Default (${platform}).sublime-mousemap",
+                  "base_file": "${packages}/EnhancedFontResizer/resources/mousemap/Default (${platform}).sublime-mousemap",
                   "default": "[\n\t$0\n]\n"
                 }
               },

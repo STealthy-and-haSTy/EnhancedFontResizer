@@ -3,9 +3,6 @@ import sublime_plugin
 
 from os.path import basename, splitext
 
-# Related reading:
-#   https://forum.sublimetext.com/t/zoom-in-all-projects/69019/
-
 
 ## ----------------------------------------------------------------------------
 
@@ -146,7 +143,7 @@ class BaseFontSize():
         if action == "reset":
             return self.reset_font()
 
-        print(f"plugin_name: unknown font action '{action}' provided")
+        print(f"EnhancedFontResizer: unknown font action '{action}' provided")
 
 
 ## ----------------------------------------------------------------------------

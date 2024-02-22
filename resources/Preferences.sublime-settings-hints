@@ -2,14 +2,14 @@
     // The default font size to return to when reverting
     // the global font size; the default value is the
     // font_size setting that was in place when you
-    // first installed the FontResizer package.
+    // first installed the EnhancedFontResizer package.
     "default_font_size": 10,
 
     // The minimum font size to allow when zooming out
-    // on fonts using the FontResizer package.
+    // on fonts using the EnhancedFontResizer package.
     "min_font_size": 8,
 
     // The maximun font size to allow when zooming in
-    // on fonts using the FontResizer package.
+    // on fonts using the EnhancedFontResizer package.
     "max_font_size": 128
 }

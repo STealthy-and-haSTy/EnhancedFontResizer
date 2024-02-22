@@ -1,0 +1,25 @@
+[
+   {
+      "caption":"Preferences: EnhancedFontResizer Key Bindings",
+      "command":"edit_settings",
+      "args":{
+         "base_file":"${packages}/EnhancedFontResizer/resources/keymap/Default (${platform}).sublime-keymap",
+         "default":"[\n\t$0\n]\n"
+      }
+   },
+   {
+      "caption":"Preferences: EnhancedFontResizer Mouse Bindings",
+      "command":"edit_settings",
+      "args":{
+         "base_file":"${packages}/EnhancedFontResizer/resources/mousemap/Default (${platform}).sublime-mousemap",
+         "default":"[\n\t$0\n]\n"
+      }
+   },
+   {
+      "caption":"EnhancedFontResizer: Open Readme",
+      "command":"open_file",
+      "args":{
+         "file":"${packages}/EnhancedFontResizer/README.md"
+      }
+   }
+]
