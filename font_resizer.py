@@ -127,7 +127,15 @@ class BaseFontSize():
         self.erase_font_size()
 
 
-    def zoom_font(self, action="increase"):
+    def resize_font(self, size):
+        """
+        Set the font directly to a specific size; this is a thin wrapper over
+        the internal method that actualy does the overall font sizing.
+        """
+        self.set_font_size(size)
+
+
+    def zoom_font(self, action="increase", size=None):
         """
         This is the main logic of any command that's based on this subclass;
         using the action, this will proxy to the appropriate method to carry
@@ -142,6 +150,13 @@ class BaseFontSize():
 
         if action == "reset":
             return self.reset_font()
+
+        if action == "set":
+            if size is not None:
+                self.set_font_size(size)
+            else:
+                print(f"EnhancedFontResizer: font action '{action}' needs 'size' argument")
+            return
 
         print(f"EnhancedFontResizer: unknown font action '{action}' provided")
 
@@ -159,11 +174,11 @@ class GlobalFontSizeCommand(BaseFontSize, sublime_plugin.ApplicationCommand):
     manner consistent with the built in commands, except that it does not just
     erase the font size and instead resets it to the default instead.
     """
-    def run(self, action="increase"):
+    def run(self, action="increase", **kwargs):
         """
         Alter the font size preference in the global Preferences file.
         """
-        self.zoom_font(action)
+        self.zoom_font(action, **kwargs)
 
 
     def get_font_size(self):
@@ -212,12 +227,12 @@ class WindowFontSizeCommand(BaseFontSize, sublime_plugin.WindowCommand):
     project, then the font size is persisted to disk when it changes; otherwise
     the changes only persist while the window exists.
     """
-    def run(self, action="increase"):
+    def run(self, action="increase", **kwargs):
         """
         Alter the font size preference in the project specific settings of the
         current window; the window need not have an explicit project.
         """
-        self.zoom_font(action)
+        self.zoom_font(action, **kwargs)
 
 
     def get_window_settings(self):
@@ -291,12 +306,12 @@ class SyntaxFontSizeCommand(BaseFontSize, sublime_plugin.TextCommand):
     will be persisted to disk in the same manner as the global font preferences
     (except in a different file).
     """
-    def run(self, edit, action="increase"):
+    def run(self, edit, action="increase", **kwargs):
         """
         Alter the font size preference in the syntax specific settings for the
         syntax in use in the currently active view.
         """
-        self.zoom_font(action)
+        self.zoom_font(action, **kwargs)
 
 
     def settings_file(self):
@@ -354,11 +369,11 @@ class ViewFontSizeCommand(BaseFontSize, sublime_plugin.TextCommand):
     This command updates the settings in the current view, which will adjust
     the font size in isolation to everything else.
     """
-    def run(self, edit, action="increase"):
+    def run(self, edit, action="increase", **kwargs):
         """
         Alter the font size preference for the currently active view.
         """
-        self.zoom_font(action)
+        self.zoom_font(action, **kwargs)
 
 
     def get_font_size(self):

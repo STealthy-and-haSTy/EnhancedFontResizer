@@ -6,25 +6,25 @@ allows you to alter the font zoom:
 
   - Globally, in the Preferences.sublime-settings file
   - Per window, in the settings key of the project data for the window
-  - By syntax, by updating your Syntax Specific sublime-settings file for you
+  - By syntax, by updating your Syntax Specific sublime-settings file
   - Per view, adjusting only the current tab
 
-In addition, when the font size is reset, the size resets a known default
-rather than just erasing the setting (and reverting you back to the official
-Sublime default).
+In addition, when the font size is reset, the size resets a known
+default rather than just erasing the setting (and reverting you back
+to the official Sublime default).
 
 
 Quick Start
 -----------
 
-A new menu entry `Preferences > EnhancedFontResizer` contains the full set of
-font adjustment commands for all of the various situations.
+A new menu entry `Preferences > EnhancedFontResizer` contains the full
+set of font adjustment commands for all of the various situations.
 
-By default, ***NO KEY BINDINGS ARE ADDED***, but Sublime's default key bindings
-will map to the global font manipulation options.
+By default, ***NO KEY BINDINGS ARE ADDED***, but Sublime's default key
+bindings will map to the global font manipulation options.
 
-Under `Preferences > Package Settings > EnhancedFontResizer` are menu entries
-for the keyboard and mouse mappings; the default files that ship with the
-package have examples for all of the various font zoom options; copy the ones
-you would like to use to your user preferences, un-comment them, and adjust as
-desired.
+Under `Preferences > Package Settings > EnhancedFontResizer` are menu
+entries for the keyboard and mouse mappings; the default files that
+ship with the package have examples for all of the various font zoom
+options; copy the ones you would like to use to your user preferences,
+un-comment them, and adjust as desired.
